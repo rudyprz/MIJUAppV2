@@ -4,18 +4,26 @@ Photos event with frame
 
 ## Install the dependencies
 ```bash
-npm install
+yarn
+```
+## Install Cordova Plugins (Camera and file)
+```bash
+quasar mode add cordova
+cd src-cordova
+cordova platform add android
+cordova plugin add cordova-plugin-file
+cordova plugin add cordova-plugin-camera
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Start the app in development mode for Android Studio (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+quasar dev -m android
 ```
 
 
-### Build the app for production
+### Build the app for production for Android Studio
 ```bash
-quasar build
+quasar build -m android
 ```
 
 ### Customize the configuration
